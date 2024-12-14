@@ -1,5 +1,5 @@
 class FOO():
-    
+    @staticmethod
     def foo1(a: int):
         b = ''
         try:
@@ -17,7 +17,7 @@ class FOO():
         except:
             b = None
         return b
-    
+    @staticmethod
     def foo2(a):
         maxc = 0
         flag = False
@@ -32,7 +32,7 @@ class FOO():
             else:
                 continue
         return maxc if flag == True else None
-    
+    @staticmethod
     def foo3(a,n):
         flag = False
         if a != None:
@@ -48,4 +48,14 @@ class FOO():
         except:
             a = None
         return a if flag == False else -a
+    @staticmethod
+    def foo4(matrix):
+        total_sum = 0
+        n = len(matrix)
+        for i in range(n):
+            for j in range(n - i - 1):
+                if matrix[i][j] % 2 == 0:
+                    total_sum += matrix[i][j]
+        return total_sum
+
         
