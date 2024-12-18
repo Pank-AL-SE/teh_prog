@@ -52,14 +52,3 @@ class PNumber():
         return f"PNumber({self.value}, {self.base}, {self.precision})"
 
 
-# Пример использования
-if __name__ == "__main__":
-    num1 = PNumber(12.34, 10, 2)
-    num2 = PNumber(56.78, 10, 2)
-
-    print(num1 + num2)  # Output: PNumber(69.12, 10, 2)
-    print(num1 - num2)  # Output: PNumber(-44.44, 10, 2)
-    print(num1 * num2)  # Output: PNumber(698.93, 10, 2)
-    print(num1 / num2)  # Output: PNumber(0.22, 10, 2)
-    print(num1.Invert())  # Output: PNumber(0.08, 10, 2)
-    print(num1.Square())  # Output: PNumber(151.79, 10, 2)
