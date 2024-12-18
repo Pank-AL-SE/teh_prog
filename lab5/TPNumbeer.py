@@ -149,7 +149,3 @@ class TPNumber(PNumber):
 
     def __repr__(self):
         return f"ПNumber({self.number}, {self.base}, {self.precision})"
-
-
-tpnum = TPNumber(123.456, 8, 3)
-print(tpnum.number_string)  # Должен вывести "173.340"
