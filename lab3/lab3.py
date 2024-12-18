@@ -11,7 +11,6 @@ class FOO():
                 b+=val
             else:
                 continue
-
         try:
             b = int(b[::-1])
         except:
